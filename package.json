@@ -1,0 +1,27 @@
+{
+  "name": "reactexpress",
+  "version": "1.0.0",
+  "description": "Starter kit for creating React and Express apps",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Brad Traversy",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.14.6"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "concurrently": "^3.5.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.2",
+    "react-modal": "^3.15.1",
+    "react-window": "^1.8.7",
+    "react-window-infinite-loader": "^1.0.7"
+  }
+}
